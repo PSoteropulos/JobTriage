@@ -1,5 +1,7 @@
 import "dotenv/config";
 import { analyzePosting } from "./extract.js";
+import { scorePostingFit } from "./score.js";
+import { pool } from "./db.js";
 
 // Real posting, pulled from applications/2026-08-19_EmpowerPharmacy_SeniorSoftwareEngineer/
 // in the Resume repo - a good first test case because it has multiple real
@@ -38,8 +40,19 @@ Experience Requirements:
 `;
 
 async function main() {
-  const result = await analyzePosting(jobPosting);
-  console.log(JSON.stringify(result, null, 2));
+  const posting = await analyzePosting(jobPosting);
+  console.log("--- Extracted posting analysis ---");
+  console.log(JSON.stringify(posting, null, 2));
+
+  const { assessment, matchedBullets } = await scorePostingFit(posting);
+  console.log("\n--- Matched bullets ---");
+  for (const b of matchedBullets) {
+    console.log(`- (${b.source}) ${b.text}`);
+  }
+  console.log("\n--- Fit assessment ---");
+  console.log(JSON.stringify(assessment, null, 2));
+
+  await pool.end();
 }
 
 main();
