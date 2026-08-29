@@ -70,7 +70,7 @@ export const postingAnalysisSchema = {
     "preferred_skills",
     "comp_range",
   ],
-};
+} as const;
 
 export interface PostingAnalysis {
   company: string;

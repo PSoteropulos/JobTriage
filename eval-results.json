@@ -1,0 +1,47 @@
+[
+  {
+    "company": "American Heart Association",
+    "role": "Sr. Digital Developer",
+    "status": "Closed, no response (ghost denial, per LinkedIn 8/22)",
+    "outcome": "neutral",
+    "composite_score": 32,
+    "recommendation": "long_shot",
+    "structural_blockers": []
+  },
+  {
+    "company": "Great Minds",
+    "role": "Senior Web Developer",
+    "status": "Rejected (8/19)",
+    "outcome": "negative",
+    "composite_score": 32,
+    "recommendation": "long_shot",
+    "structural_blockers": []
+  },
+  {
+    "company": "Sitewire",
+    "role": "Full-Stack Software Engineer",
+    "status": "Closed/likely filled",
+    "outcome": "neutral",
+    "composite_score": 42,
+    "recommendation": "long_shot",
+    "structural_blockers": []
+  },
+  {
+    "company": "SteelSeries",
+    "role": "Senior Software Engineer (GG Cloud Team)",
+    "status": "Applied",
+    "outcome": "neutral",
+    "composite_score": 38,
+    "recommendation": "long_shot",
+    "structural_blockers": []
+  },
+  {
+    "company": "Matternet",
+    "role": "Senior Backend Engineer",
+    "status": "Applied",
+    "outcome": "neutral",
+    "composite_score": 32,
+    "recommendation": "long_shot",
+    "structural_blockers": []
+  }
+]
