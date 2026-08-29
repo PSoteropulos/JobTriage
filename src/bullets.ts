@@ -90,11 +90,23 @@ export const bulletBank: Bullet[] = [
     category: "Full stack",
     text: "Independently designed and built a full-stack invoicing and dispatch management application (React, Node.js, MongoDB) for a marine charter/towing business as pro bono contract work, deployed to a staging environment for client testing.",
   },
+  // Additional Experience
+  {
+    source: "Pontchartrain Pharmacy / Brand Direct Health Pharmacy",
+    category: "Healthcare / Regulatory Background",
+    text: "PTCB-certified and Louisiana Board of Pharmacy (LABP) licensed pharmacy technician, both active and in good standing since December 2008.",
+  },
   // Coding Dojo
   {
     source: "Coding Dojo (Colorado Technical University)",
     category: "Teaching / mentorship",
     text: "Balanced a developer role with a faculty instructor role, teaching full-stack fundamentals across JS, Python, Java, and C# stacks.",
+  },
+  // Currently
+  {
+    source: "Currently",
+    category: "Infrastructure",
+    text: "Self-hosting several personal projects on custom home infrastructure (Docker Compose, Cloudflare Tunnels, VLAN network segmentation).",
   },
   // Technical Projects
   {
@@ -105,11 +117,16 @@ export const bulletBank: Bullet[] = [
   {
     source: "moodRING",
     category: "Technical projects",
-    text: "Built a music-based social app (moodring.net) with Spotify Web/Embed API integration, JWT auth, and custom image-filter-based UI components; designed and deployed independently (AWS EC2).",
+    text: "Built a music-based social app (moodring.net) with Spotify Web/Embed API integration, JWT auth, and custom image-filter-based UI components; originally designed and deployed independently on AWS EC2, later fully modernized and re-platformed to self-hosted Docker infrastructure with automated CI/CD.",
   },
   {
     source: "CookBook",
     category: "Technical projects",
-    text: "Built the backend (Express, MongoDB, Mongoose) for a group recipe-collection app; led debugging efforts and JWT-based auth/session handling.",
+    text: "Built the backend (Express, MongoDB, Mongoose) for a Coding Dojo bootcamp capstone group project (a recipe-collection app, 4 contributors); led debugging efforts and JWT-based auth/session handling.",
+  },
+  {
+    source: "CookBook",
+    category: "Technical projects",
+    text: "Independently forked the group project (previously hosted on AWS EC2) and modernized it for self-hosting (cookbookapp.net) - converted the backend to ESM and upgraded Express/Mongoose to current majors, migrated the frontend from CRA to Vite, fixed real bugs including a JWT signature-verification hole and a broken recipe-image update path, and built Docker/nginx containerization with GitHub Actions CI/CD.",
   },
 ];
